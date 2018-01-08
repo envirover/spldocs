@@ -3,14 +3,6 @@
 
 # SPLGroundControl
 
-SPL is a communication technology designed to:
-* Track position, attitude, and velocity of your drones anywhere on Earth;
-* Monitor vital signs signs of your drone, such as battery charge, system status, and temperature;
-* Update missions, parameters, and send commands to your drone;
-* Control gymbals, and RC servos connected to AutoPilot.
-
-![SPL System Architecture](https://s3-us-west-2.amazonaws.com/envirover/images/Satellite+Proxy+Link+(SPL).jpg)
-
 SPLGroundControl is a MAVLink proxy server for ArduPilot drones that uses Iridium sort burst data (ISBD) satellite communication system provided by [RockBLOCK](http://www.rock7mobile.com/products-rockblock) unit. It is designed to work with [SPLRadioRoom](https://github.com/envirover/SPLRadioRoom) field application, providing two way communication channel between ArduPilot based drones and MAVLink ground control stations such as MAVProxy, Mission Planer, or QGroundControl.
 
 ### SPLGroundControl Installation and Use
