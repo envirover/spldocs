@@ -1,5 +1,3 @@
-![SPL System Architecture](https://s3-us-west-2.amazonaws.com/envirover/images/SPL-2.0.jpg)
-
 [![Build Status](https://travis-ci.org/envirover/SPLRadioRoom.svg?branch=master)](https://travis-ci.org/envirover/SPLRadioRoom)
 [![Join the chat at https://gitter.im/SPLRadioRoom/Lobby](https://badges.gitter.im/SPLRadioRoom/Lobby.svg)](https://gitter.im/SPLRadioRoom/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -22,7 +20,7 @@ The first version of SPL RadioRoom run on Arduino 101. See [arduino/README.md](a
 
 SPL RadioRoom uses serial devices to communicate with autopilot and ISBD transceiver. The safest bet is to use USB to TTL UART serial converter to connect both autopilot and transceiver to the Raspberry Pi's USB ports. Another, less straightforward option is to connect autopilot to the Raspberry Pi serial port using GPIO pins. 
 
-![Wiring](https://s3-us-west-2.amazonaws.com/envirover/images/RadioRoomWiring3.jpg)
+![Wiring](images/radioroom-wiring.jpg)
 
 See the instructions on connecting companion computer to Pixhawk running ArduPilot and PX4 autopilots:
 - [ArduPilot Connecting the Pixhawk and RPi](http://ardupilot.org/dev/docs/raspberry-pi-via-mavlink.html)
@@ -65,13 +63,13 @@ If radioroom is properly wired and configured, the output should look like this:
 
 ```
 pi@raspberrypi:~ $ sudo systemctl status radioroom.service
-● radioroom.service - SPL RadioRoom Service
+â—� radioroom.service - SPL RadioRoom Service
    Loaded: loaded (/etc/systemd/system/radioroom.service; enabled; vendor preset: enabled)
    Active: activating (start) since Tue 2017-11-07 07:27:56 UTC; 6 days ago
      Docs: http://github.com/envirover/SPLRadioRoom
  Main PID: 254 (radioroom)
    CGroup: /system.slice/radioroom.service
-           └─254 /usr/sbin/radioroom
+           â””â”€254 /usr/sbin/radioroom
 
 Nov 07 07:27:56 raspberrypi systemd[1]: Starting SPL RadioRoom Service...
 Nov 07 07:27:57 raspberrypi radioroom[254]: Starting SPL RadioRoom 2.0.0...
