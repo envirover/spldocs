@@ -20,7 +20,7 @@ SPL uses Iridium short burst data (SBD) satellite communication technology provi
 
 Iridium SBD is a high latency, low bandwidth messaging technology, yet it is relatively inexpensive compared to other global communication solutions. The required hardware is very compact and lightweight.
 
-The SPL software suite consists of firmware for ArduPilot companion computer called [SPL RadioRoom](SPLRadioRoom.html) and a web service application called [SPL GroundControl](SPLGroundControl.html), which serves as a proxy between ground control stations such as Mission Planer or QGroundControl and Rock7Core web services.
+The SPL software suite consists of firmware for ArduPilot companion computer called [SPL RadioRoom](radioroom.html) and a web service application called [SPL GroundControl](gGroundcontrol.html), which serves as a proxy between ground control stations such as Mission Planer or QGroundControl and Rock7Core web services.
 
 SPL Radio Room and SPL Ground Control are open source software.
      
