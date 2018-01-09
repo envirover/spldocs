@@ -1,3 +1,9 @@
-/.metadata/
-/.settings/
-.project
+-/.metadata/
+-/.settings/
+-.project
+_site
+.sass-cache
+.jekyll-metadata
+*.gem
+.bundle
+vendor/bundle
