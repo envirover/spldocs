@@ -1,14 +1,13 @@
 # Site settings
-title: Jekyll Doc Theme
-email: your-email@domain.com
+title: SPL Satellite Telemetry
+email: pb@envirover.com
 description: >
-  Jekyll Template for Project Websites
-  providing documentation and blog post pages.
+  SPL Satellite Telemetry.
 
-baseurl: "/jekyll-doc-theme" # the subpath of your site, e.g. /blog/
-url: https://aksakalli.github.io/jekyll-doc-theme # the base hostname & protocol for your site
-git_address: https://github.com/aksakalli/jekyll-doc-theme
-git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
+baseurl: "/spldocs" # the subpath of your site, e.g. /blog/
+url: https://envirover.com/spldocs # the base hostname & protocol for your site
+git_address: https://github.com/envirover/spldocs
+git_edit_address: https://github.com/envirover/spldocs
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap

@@ -1,50 +1,45 @@
 ---
 title: Welcome
-permalink: /docs/home/
-redirect_from: /docs/index.html
+permalink: /spldocs/
+redirect_from: /spldocs/index.html
 ---
 
-## Getting started
+# SPL
 
-[GitHub Pages](https://pages.github.com) can automatically generate and serve the website for you.
-Let's say you have a username/organisation `my-org` and project `my-proj`; if you locate Jekyll source under `docs` folder of master branch in your repo `github.com/my-org/my-proj`, the website will be served on `my-org.github.io/my-proj`.
-The good thing about coupling your documentation with the source repo is, whenever you merge features with regarding content to master branch, it will also be published on the webpage instantly.
+SPL is a global satellite telemetry solution for unmanned vehicles controlled by [ArduPilot](http://ardupilot.org/)
 
-1. Just download the source from [github.com/aksakalli/jekyll-doc-theme](https://github.com/aksakalli/jekyll-doc-theme/master) into your repo under `docs` folder.
-2. Edit site settings in  `_config.yml` file according to your project. !!! `baseurl` should be your website's relative URI like `/my-proj` !!!
-3. Replace `favicon.ico` and `img/logonav.png` with your own logo.
+With SPL you can:
+- Track position, attitude, and velocity of your vehicles anywhere on Earth.
+- Monitor vital signs of your vehicles, such as battery charge, system status, and temperature.
+- Update on-board parameters and send commands and missions to your vehicles.
+- Control gymbals, and RC servos connected to autopilots.
 
-## Writing content
+SPL can also be used together with radio telemetry as a long range backup channel to track and control vehicles if they leave radio channel range.
 
-### Docs
+Essentially, with SPL you could control your unmanned vehicle on the other side of the Earth almost the same way you would with radio telemetry. SPL was designed to work with popular ground control stations such as Mission Planner, QGrouindControl, and MAVProxy.
 
-Docs are [collections](https://jekyllrb.com/docs/collections/) of pages stored under `_docs` folder. To create a new page:
+Not only does SPL transmit messages between autopilot and ground control stations, it also filters messages and aggregates data to adapt MAVLink protocol for high latency asynchronous SBD communication.
 
-**1.** Create a new Markdown as `_docs/my-page.md` and write [front matter](https://jekyllrb.com/docs/frontmatter/) & content such as:
+![SPL System Architecture](images/spl.jpg)
+     
+SPL uses Iridium short burst data (SBD) satellite communication technology provided by [Rock Seven Mobile](http://www.rock7mobile.com/). 
 
-```
----
-title: My Page
-permalink: /docs/my-page/
----
+Iridium SBD is a high latency, low bandwidth messaging technology, yet it is relatively inexpensive compared to other global communication solutions. The required hardware is very compact and lightweight.
 
-Hello World!
-```
+The SPL software suite consists of firmware for ArduPilot companion computer called [SPL RadioRoom](radioroom.html) and a web service application called [SPL GroundControl](gGroundcontrol.html), which serves as a proxy between ground control stations such as Mission Planer or QGroundControl and Rock7Core web services.
 
-**2.** Add the pagename to `_data/docs.yml` file in order to list in docs navigation panel:
+SPL Radio Room and SPL Ground Control are open source software.
+     
+SPL Radio Room requires the following hardware components:
+- [RockBLOCK Mk2](http://www.rock7mobile.com/products-rockblock) Iridium satellite communication module>
+- Raspberry Pi single board computer
+- [ArduPilot-based autopilot](http://ardupilot.org/dev/docs/supported-autopilot-controller-boards.html), such as Pixhawk
 
-```
-- title: My Group Title
-  docs:
-  - my-page
-```
+RockBLOCK MK2 naked communication module costs around 250$. RockBLOCK line rental is about $13 per month. Arduino 101 is around $30.
 
-### Blog posts
+By default SPL Radio Room reports every 5 minutes. Each report costs 1 RockBLOCK credit. The cost of credits varies from $0.05 to $0.14 depending on the amount of credits purchased. 
 
-Add a new Markdown file such as `2017-05-09-my-post.md` and write the content similar to other post examples.
+SPL GroundControl requires a computer accessible over the Internet. Running SPL Ground Control on Amazon AWS</a> is probably the easiest way to get started with SPL.
 
-### Pages
+Optional SPL Stream and SPL Tracks web services could be used to store and visualize the vehicle tracks.
 
-The homepage is located under `index.html` file. You can change the content or design completely different welcome page for your taste. (You can use [bootstrap components](http://getbootstrap.com/components/))
-
-In order to add a new page, create a new `.html` or `.md` (markdown) file under root directory and link it in `_includes/topnav.html`.
