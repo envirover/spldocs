@@ -1,7 +1,10 @@
 ---
-title: Welcome
-permalink: /spldocs/
-redirect_from: /spldocs/index.html
+title: Product 1
+keywords: mydoc
+sidebar: product1_sidebar
+toc: false
+permalink: p1_landing_page.html
+folder: product1
 ---
 
 # SPL
