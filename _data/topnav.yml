@@ -13,6 +13,6 @@ topnav_dropdowns:
     - title: Products
       folderitems:
         - title: SPL 1.0
-          url: /p1_landing_page.html
+          url: /spl.html
         - title: SPL 2.0
           url: /p2_landing_page.html

@@ -339,9 +339,9 @@ For more detail, see [Pages][mydoc_pages].
 
 ## Where to store your documentation topics
 
-You can store your files for each product inside subfolders following the pattern shown in the theme. For example, product1, product2, etc, can be stored in their own subfolders inside the \_pages directory. Inside \_pages, you can store your topics inside sub-subfolders or sub-sub-folders to your heart's content. When Jekyll builds your site, it will pull the topics into the root directory and use the permalink for the URL.
+You can store your files for each product inside subfolders following the pattern shown in the theme. For example, SPL, product2, etc, can be stored in their own subfolders inside the \_pages directory. Inside \_pages, you can store your topics inside sub-subfolders or sub-sub-folders to your heart's content. When Jekyll builds your site, it will pull the topics into the root directory and use the permalink for the URL.
 
-Note that product1, product2, and mydoc are all just sample content to demonstrate how to add multiple products into the theme. You can freely delete that content.
+Note that SPL, product2, and mydoc are all just sample content to demonstrate how to add multiple products into the theme. You can freely delete that content.
 
 For more information, see [Pages][mydoc_pages] and [Posts][mydoc_posts].
 
@@ -359,7 +359,7 @@ If you want to generate PDF, you'll need a license for [Prince XML](http://www.p
 
 If you're on Windows, install [Git Bash client](https://git-for-windows.github.io/) rather than using the default Windows command prompt.
 
-Open up the css/printstyles.css file and customize the email address (`youremail@domain.com`) that is listed there. This email address appears in the bottom left footer of the PDF output. You'll also need to create a PDF configuration file following the examples shown in the pdfconfigs folder, and also customize some build scripts following the same pattern shown in the root: pdf-product1.sh
+Open up the css/printstyles.css file and customize the email address (`youremail@domain.com`) that is listed there. This email address appears in the bottom left footer of the PDF output. You'll also need to create a PDF configuration file following the examples shown in the pdfconfigs folder, and also customize some build scripts following the same pattern shown in the root: pdf-spl.sh
 
 See the section on [Generating PDFs][mydoc_generating_pdfs] for more details about setting the theme up for this output.
 
