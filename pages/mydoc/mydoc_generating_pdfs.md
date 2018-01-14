@@ -32,7 +32,7 @@ This builds a PDF for the documentation in the theme. Look in the **pdf** folder
 To build a PDF for the other sample projects, run these commands:
 
 ```bash
-. pdf-product1.sh
+. pdf-spl.sh
 ```
 
 or

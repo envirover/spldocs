@@ -15,7 +15,7 @@ entries:
       url: /mydoc_introduction.html
       output: web
     - title: Product 1
-      url: /p1_landing_page.html
+      url: /spl.html
       output: web
     - title: Product 2
       url: /p2_landing_page.html

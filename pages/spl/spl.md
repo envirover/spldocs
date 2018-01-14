@@ -1,13 +1,11 @@
 ---
-title: Product 1
-keywords: mydoc
-sidebar: product1_sidebar
+title: SPL
+keywords: spl, ardupilot, mavlink, rockblock, satellite, telemetry, iridium, unmanned vehicle, sbd
+sidebar: spl_sidebar
 toc: false
-permalink: p1_landing_page.html
-folder: product1
+permalink: spl.html
+folder: spl
 ---
-
-# SPL
 
 SPL is a global satellite telemetry solution for unmanned vehicles controlled by [ArduPilot](http://ardupilot.org/)
 
