@@ -1,11 +1,18 @@
+---
+title: SPL Stream and SPL Tracks
+keywords: spl, ardupilot, mavlink, rockblock, satellite, telemetry, iridium, unmanned vehicle, sbd
+sidebar: spl_sidebar
+toc: false
+permalink: tracks.html
+folder: spl
+---
+
 SPLStream and SPLTracks web services provide a solution for storing and visualizing data reported by SPLRadioRoom.
 
 ![SPLStream and SPLTracks](/images/spltracks.jpg)
 
-### SPLStream 
 SPLStream web service saves MAVLink messages received from Rock7Core to AWS DynamoDB database service.
 
-### SPLTracks
 SPLTracks provides access to the reported data in GeoJSON format. 
 
 The required query string parameter 'devices' must contain a comma-separated list of RockBLOCK IMEI. The optional query string parameters 'startTime' and 'endTime' specify a time range in UNIX epoch time for the retrieved data. The optional query string parameter 'type' defines the GeoJSON geometry type. The accepted values of 'type' parameter are 'point' (default) and 'linestring'.
@@ -14,7 +21,7 @@ The required query string parameter 'devices' must contain a comma-separated lis
 
 [SPL Tracks web map demo](http://spldemo.envirover.com/spltracks/?devices=300234064280890&startTime=1499736149000&endTime=1499742468000)
 
-### Depoyment
+### Deployment
 SPLStream and SPLTracks web applications could run in any java application servers. Because the application require low latency connection to DynamoDB database service, it is recommended to run these web applications in AWS EC2. 
 
 The easiest way to deploy SPLStream and SPLTracks web applications on AWS is using [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk) service. 
