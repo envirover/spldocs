@@ -23,20 +23,20 @@ entries:
   - title: Getting Started
     output: web, pdf
     folderitems:
-    - title: Product 1 home
-      url: /p1_landing_page.html
+    - title: SPL home
+      url: /spl.html
       output: web
 
-    - title: Sample 1
-      url: /p1_sample1.html
+    - title: SPL RadioRoom
+      url: /radioroom.html
       output: web, pdf
 
-    - title: Sample 2
-      url: /p1_sample2.html
+    - title: SPL GroundControl
+      url: /groundcontrol.html
       output: web, pdf
 
-    - title: Sample 3
-      url: /p1_sample3.html
+    - title: SPL Stream and SPL Tracks
+      url: /tracks.html
       output: web, pdf
 
   - title: Another heading
