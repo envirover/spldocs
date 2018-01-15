@@ -4,7 +4,7 @@
 entries:
 - title: Sidebar
   product: SPL
-  version: 1.0
+  version: 2.0
   folders:
 
   - title:
@@ -28,15 +28,15 @@ entries:
       output: web
 
     - title: SPL RadioRoom
-      url: /radioroom.html
+      url: /splradioroom.html
       output: web, pdf
 
     - title: SPL GroundControl
-      url: /groundcontrol.html
+      url: /splgroundcontrol.html
       output: web, pdf
 
     - title: SPL Stream and SPL Tracks
-      url: /tracks.html
+      url: /spltracks.html
       output: web, pdf
 
   - title: Another heading
