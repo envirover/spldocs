@@ -11,12 +11,9 @@ entries:
     - title: News
       url: /news.html
       output: web
-    - title: Theme instructions
-      url: /mydoc_introduction.html
-      output: web
-    - title: Product 1
+    - title: SPL
       url: /spl.html
       output: web
-    - title: Product 2
-      url: /p2_landing_page.html
+    - title: NVI
+      url: /nvi.html
       output: web
