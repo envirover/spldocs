@@ -17,6 +17,6 @@ With NVI you can:
 
 NVI can also be used together with radio telemetry as a long range backup channel to track and control vehicles if they leave radio channel range.
 
-Essentially, with SPL you could control your unmanned vehicle on the other side of the Earth almost the same way you would with radio telemetry. NVI was designed to work with popular ground control stations such as Mission Planner, QGrouindControl, and MAVProxy.
+Essentially, with NVI you could control your unmanned vehicle on the other side of the Earth almost the same way you would with radio telemetry. NVI was designed to work with popular ground control stations such as Mission Planner, QGrouindControl, and MAVProxy.
 
-Not only does SPL transmit messages between autopilot and ground control stations, it also filters messages and aggregates data to adapt MAVLink protocol for high latency asynchronous communication.
+Not only does NVI transmit messages between autopilot and ground control stations, it also filters messages and aggregates data to adapt MAVLink protocol for high latency asynchronous communication.

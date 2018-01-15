@@ -7,7 +7,7 @@ permalink: spl.html
 folder: spl
 ---
 
-SPL is a global satellite telemetry solution for unmanned vehicles controlled by [ArduPilot](http://ardupilot.org/)
+SPL is a global satellite telemetry solution for unmanned vehicles controlled by [ArduPilot](http://ardupilot.org/).
 
 With SPL you can:
 - Track position, attitude, and velocity of your vehicles anywhere on Earth.
