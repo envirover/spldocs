@@ -1,5 +1,5 @@
 ---
-title: SPL
+title: SPL Satellite Telemetry
 keywords: spl, ardupilot, mavlink, rockblock, satellite, telemetry, iridium, unmanned vehicle, sbd
 sidebar: spl_sidebar
 toc: false

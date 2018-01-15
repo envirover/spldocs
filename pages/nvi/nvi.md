@@ -1,5 +1,5 @@
 ---
-title: NVI
+title: NVI Satellite Telemetry
 keywords: nvi, ardupilot, mavlink, satellite, telemetry, unmanned vehicle
 sidebar: nvi_sidebar
 toc: false
