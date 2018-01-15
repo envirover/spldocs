@@ -18,17 +18,18 @@ entries:
       url: /tocpage.html
       output: pdf
       type: frontmatter
-  - title: About NVI
-    url: /nvi.html
-    output: web
+  - title: Introduction
+    output: web, pdf
+    folderitems:
+    - title: About NVI
+      url: /nvi.html
+      output: web, pdf
   - title: Installation
     output: web, pdf
     folderitems:
-
     - title: NVI RadioRoom
       url: /nviradioroom.html
       output: web, pdf
-
     - title: NVI GroundControl
       url: /nvigroundcontrol.html
       output: web, pdf
