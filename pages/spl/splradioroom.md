@@ -3,7 +3,7 @@ title: SPL RadioRoom
 keywords: spl, ardupilot, mavlink, rockblock, satellite, telemetry, iridium, unmanned vehicle, sbd
 sidebar: spl_sidebar
 toc: false
-permalink: radioroom.html
+permalink: splradioroom.html
 folder: spl
 ---
 

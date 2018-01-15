@@ -104,7 +104,7 @@ sidebars:
 - home_sidebar
 - mydoc_sidebar
 - spl_sidebar
-- product2_sidebar
+- nvi_sidebar
 - other
 
 description: "Envirover software documentation."
