@@ -3,7 +3,7 @@ title: NVI RadioRoom
 keywords: nvi, ardupilot, mavlink, satellite, telemetry, unmanned vehicle
 sidebar: nvi_sidebar
 toc: false
-permalink: nvigroundcontrol.html
+permalink: nviradioroom.html
 folder: nvi
 ---
 
