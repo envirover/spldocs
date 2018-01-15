@@ -7,8 +7,6 @@ permalink: splradioroom.html
 folder: spl
 ---
 
-[![Join the chat at https://gitter.im/SPLRadioRoom/Lobby](https://badges.gitter.im/SPLRadioRoom/Lobby.svg)](https://gitter.im/SPLRadioRoom/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 SPL RadioRoom is a firmware for a companion computer of MAVLink-based autopilots such as ArduPilot or PX4 that provides telemetry over Iridium Short Burst Data (ISBD) satellite messaging system. Together with [SPL GroundControl](https://github.com/envirover/SPLGroundControl) server it provides a two-way communication solution between unmanned vehicles and ground control stations such as QGroundControl or Mission Planer.
 
 ## System Requirements
