@@ -7,9 +7,9 @@ permalink: spltracks.html
 folder: spl
 ---
 
-SPL Stream and SPL Tracks web services provide a solution for storing and visualizing data reported by SPLRadioRoom.
+SPL Stream and SPL Tracks web services provide a solution for storing and visualizing data reported by SPL RadioRoom.
 
-![SPL Stream and SPL Tracks](/images/spltracks.jpg)
+![SPL Stream and SPL Tracks](images/spltracks.jpg)
 
 SPL Stream web service saves MAVLink messages received from Rock7Core to AWS DynamoDB database service.
 

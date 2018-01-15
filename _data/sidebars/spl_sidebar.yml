@@ -19,22 +19,18 @@ entries:
       url: /tocpage.html
       output: pdf
       type: frontmatter
-
-  - title: Getting Started
+  - title: SPL home
+    url: /spl.html
+    output: web
+  - title: Installation
     output: web, pdf
     folderitems:
-    - title: SPL home
-      url: /spl.html
-      output: web
-
     - title: SPL RadioRoom
       url: /splradioroom.html
       output: web, pdf
-
     - title: SPL GroundControl
       url: /splgroundcontrol.html
       output: web, pdf
-
     - title: SPL Stream and SPL Tracks
       url: /spltracks.html
       output: web, pdf
