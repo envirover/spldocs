@@ -12,7 +12,7 @@ topnav_dropdowns:
   folders:
     - title: Products
       folderitems:
-        - title: SPL 1.0
+        - title: SPL 
           url: /spl.html
-        - title: SPL 2.0
-          url: /p2_landing_page.html
+        - title: NVI
+          url: /nvi.html
