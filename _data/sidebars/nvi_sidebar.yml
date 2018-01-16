@@ -2,8 +2,8 @@
 
 entries:
 - title: NVI Satellite Telemetry
-  product: NVI
-  version: 1.0
+  product: NVI Satellite Telemetry
+  version: 1.0 alpha
   folders:
 
   - title:

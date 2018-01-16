@@ -20,3 +20,5 @@ NVI can also be used together with radio telemetry as a long range backup channe
 Essentially, with NVI you could control your unmanned vehicle on the other side of the Earth almost the same way you would with radio telemetry. NVI was designed to work with popular ground control stations such as Mission Planner, QGrouindControl, and MAVProxy.
 
 Not only does NVI transmit messages between autopilot and ground control stations, it also filters messages and aggregates data to adapt MAVLink protocol for high latency asynchronous communication.
+
+![NVI System Architecture](images/nvi.jpg)
