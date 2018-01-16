@@ -3,10 +3,9 @@ title: SPL Stream and SPL Tracks installation
 keywords: spl, ardupilot, mavlink, rockblock, satellite, telemetry, iridium, geojson
 sidebar: spl_sidebar
 toc: false
-permalink: spltracks.html
+permalink: spltracks-aws.html
 folder: spl
 ---
-
 
 SPL Stream and SPL Tracks web applications could run in any java application servers. Because the application require low latency connection to DynamoDB database service, it is recommended to run these web applications in AWS EC2. 
 
