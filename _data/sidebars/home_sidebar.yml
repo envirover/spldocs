@@ -4,16 +4,12 @@ entries:
 - title: Sidebar
   levels: one
   folders:
-
   - title: Products
     output: web
     folderitems:
-    - title: News
-      url: /news.html
-      output: web
-    - title: SPL
+    - title: SPL Satellite Telemetry
       url: /spl.html
       output: web
-    - title: NVI
+    - title: NVI Satellite Telemetry
       url: /nvi.html
       output: web

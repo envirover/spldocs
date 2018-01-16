@@ -1,9 +1,9 @@
 ---
-title: SPL RadioRoom
-keywords: spl, ardupilot, mavlink, rockblock, satellite, telemetry, iridium, unmanned vehicle, sbd
+title: SPL RadioRoom for Raspberry Pi
+keywords: spl, ardupilot, mavlink, rockblock, satellite, telemetry, iridium, unmanned vehicle, sbd, raspberry pi
 sidebar: spl_sidebar
 toc: false
-permalink: splradioroom.html
+permalink: splradioroom-rpi.html
 folder: spl
 ---
 
