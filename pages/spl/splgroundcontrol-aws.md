@@ -6,6 +6,7 @@ toc: false
 permalink: splgroundcontrol-aws.html
 folder: spl
 ---
+The easiest way to get started with SPLGroundControl is to deploy it on Amazon AWS using the provided CloudFormation template.
 
 1. Create [Amazon AWS](https://aws.amazon.com/) account.
 2. Select the nearest region in AWS Console.
@@ -24,9 +25,7 @@ folder: spl
 
 CloudWatchLogs stack output parameters links to the CloudWatch log group with SPLgroundControl application logs. 
 
-For SPL Stream and SPL Tracks installation instructions see [https://github.com/envirover/SPLGroundControl/wiki/SPLStream-and-SPLTracks-Web-Services](https://github.com/envirover/SPLGroundControl/wiki/SPLStream-and-SPLTracks-Web-Services).
+By default MAVLink (5760) port can be accessed from any client IP. That is anybody who knows IP address of SPL server can connect to it and control your drone. To make these ports accessible just from your machine, determine the public IP address of the machine [http://checkip.amazonaws.com/](http://checkip.amazonaws.com/) and set ClientCIDR input parameter to IP/32. If the stack is already created change the inbound rules in the security group created by the stack.
 
-:exclamation: By default MAVLink (5760) and SSH (22) ports can be accessed from any client IP. That is anybody who knows IP address of SPL server can connect to it and control your drone. To make these ports accessible just from your machine, determine the public IP address of the machine [http://checkip.amazonaws.com/](http://checkip.amazonaws.com/) and set ClientCIDR input parameter to IP/32. If the stack is already created change the inbound rules in the security group created by the stack.
-
-:moneybag:  By default the stack creates t2.micro type EC2 instance that is eligible for [AWS free tier](https://aws.amazon.com/s/dm/optimization/server-side-test/free-tier/free_np/).  
+By default the stack creates t2.micro type EC2 instance that is eligible for [AWS free tier](https://aws.amazon.com/s/dm/optimization/server-side-test/free-tier/free_np/).  
 
