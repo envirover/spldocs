@@ -3,7 +3,7 @@
 
 entries:
 - title: Sidebar
-  product: SPL
+  product: SPL Global Telemetry
   version: 2.0
   folders:
 
@@ -31,14 +31,17 @@ entries:
   - title: Installation
     output: web, pdf
     folderitems:
-    - title: SPL RadioRoom
-      url: /splradioroom.html
+    - title: SPL RadioRoom for Raspberry Pi
+      url: /splradioroom-rpi.html
       output: web, pdf
+    - title: SPL RadioRoom for Arduino
+      url: /splradioroom-arduino.html
+      output: web, pdf      
     - title: SPL GroundControl
       url: /splgroundcontrol.html
       output: web, pdf
     - title: SPL GroundControl Installation on Amazon AWS
-      url: /splgroundcontrolaws.html
+      url: /splgroundcontrol-aws.html
       output: web, pdf      
     - title: SPL Stream and SPL Tracks
       url: /spltracks.html

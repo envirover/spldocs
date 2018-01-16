@@ -3,7 +3,7 @@ title: SPL GroundControl Installation on Amazon AWS
 keywords: spl, ardupilot, mavlink, rockblock, satellite, telemetry, iridium, unmanned vehicle, sbd, amazon, aws
 sidebar: spl_sidebar
 toc: false
-permalink: splgroundcontrolaws.html
+permalink: splgroundcontrol-aws.html
 folder: spl
 ---
 
