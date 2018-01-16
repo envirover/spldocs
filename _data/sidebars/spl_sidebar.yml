@@ -37,13 +37,10 @@ entries:
     - title: SPL RadioRoom for Arduino
       url: /splradioroom-arduino.html
       output: web, pdf      
-    - title: SPL GroundControl
-      url: /splgroundcontrol.html
-      output: web, pdf
     - title: SPL GroundControl Installation on Amazon AWS
       url: /splgroundcontrol-aws.html
       output: web, pdf      
     - title: SPL Stream and SPL Tracks
-      url: /spltracks.html
+      url: /spltracks-aws.html
       output: web, pdf
 

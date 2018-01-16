@@ -7,7 +7,7 @@ entries:
   - title: Products
     output: web
     folderitems:
-    - title: SPL Satellite Telemetry
+    - title: SPL Global Telemetry
       url: /spl.html
       output: web
     - title: NVI Satellite Telemetry
