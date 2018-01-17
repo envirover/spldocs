@@ -35,7 +35,7 @@ exclude:
   - .gitignore
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: Envirover docs feedback
+feedback_subject_line: Envirover docs
 
 feedback_email: pb@envirover.com
 # used as a contact email for the Feedback link in the top navigation bar

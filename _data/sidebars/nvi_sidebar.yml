@@ -1,8 +1,8 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
 entries:
-- title: NVI Satellite Telemetry
-  product: NVI Satellite Telemetry
+- title: NVI BLOS Telemetry
+  product: NVI BLOS Telemetry
   version: 1.0 alpha
   folders:
 

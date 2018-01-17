@@ -17,8 +17,6 @@ With SPL you can:
 
 Essentially, with SPL you could control your unmanned vehicle on the other side of the Earth almost the same way you would with radio telemetry. SPL was designed to work with popular ground control stations such as Mission Planner, QGrouindControl, and MAVProxy.
 
-Not only does SPL transmit messages between autopilot and ground control stations, it also filters messages and aggregates data to adapt MAVLink protocol for high latency asynchronous SBD communication.
-
 ![SPL System Architecture](images/spl.jpg)
      
 SPL uses Iridium short burst data (SBD) satellite communication technology provided by [Rock Seven Mobile](http://www.rock7mobile.com/). 
@@ -45,8 +43,6 @@ SPL GroundControl is a MAVLink proxy server for ArduPilot drones that uses Iridi
 ## SPL Stream and SPL Tracks
 
 Optional SPL Stream and SPL Tracks web services provide a solution for storing and visualizing data reported by SPL RadioRoom.
-
-![SPL Stream and SPL Tracks](images/spltracks.jpg)
 
 SPL Stream web service saves messages received from SPL RadioRoom to AWS DynamoDB database service.
 
