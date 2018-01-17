@@ -14,5 +14,5 @@ topnav_dropdowns:
       folderitems:
         - title: SPL Global Telemetry
           url: /spl.html
-        - title: NVI Satellite Telemetry
+        - title: NVI BLOS Telemetry
           url: /nvi.html

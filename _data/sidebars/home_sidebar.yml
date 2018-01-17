@@ -10,6 +10,6 @@ entries:
     - title: SPL Global Telemetry
       url: /spl.html
       output: web
-    - title: NVI Satellite Telemetry
+    - title: NVI BLOS Telemetry
       url: /nvi.html
       output: web
