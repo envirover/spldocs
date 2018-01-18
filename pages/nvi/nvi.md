@@ -1,24 +1,24 @@
 ---
-title: NVI Satellite Telemetry
-keywords: nvi, ardupilot, mavlink, satellite, telemetry, unmanned vehicle
+title: NVI BLOS Telemetry
+keywords: nvi, blos, ardupilot, px4, mavlink, satellite, telemetry, autonomou vehicle
 sidebar: nvi_sidebar
 toc: false
 permalink: nvi.html
 folder: nvi
 ---
 
-NVI is a global satellite telemetry solution for unmanned vehicles controlled by [ArduPilot](http://ardupilot.org/)
+NVI BLOS telemetry is designed to work with satellite or cellular modems such as
+[Iridium GO!](https://www.iridium.com/products/details/iridiumgo).
 
-With NVI you can:
-- Track position, attitude, and velocity of your vehicles anywhere on Earth.
-- Monitor vital signs of your vehicles, such as battery charge, system status, and temperature.
-- Update on-board parameters and send commands and missions to your vehicles.
-- Control gymbals, and RC servos connected to autopilots.
-
-NVI can also be used together with radio telemetry as a long range backup channel to track and control vehicles if they leave radio channel range.
-
-Essentially, with NVI you could control your unmanned vehicle on the other side of the Earth almost the same way you would with radio telemetry. NVI was designed to work with popular ground control stations such as Mission Planner, QGrouindControl, and MAVProxy.
-
-Not only does NVI transmit messages between autopilot and ground control stations, it also filters messages and aggregates data to adapt MAVLink protocol for high latency asynchronous communication.
+NVI provides peer-to-peer communication between an autonomous vehicle with 
+[ArduPilot](http://ardupilot.org/) or [PX4](http://px4.io/) autopilot and 
+[Mission Planner](http://ardupilot.org/planner/) or 
+[QGroundControl](http://qgroundcontrol.com/) ground control station.
 
 ![NVI System Architecture](images/nvi.jpg)
+
+The NVI software suite includes firmware for the autopilot companion computer [NVI RadioRoom](nviradioroom.html) and  
+a TCP/IP server application [NVI GroundControl](nvigroundcontrol.html). 
+
+NVI not simply transmits messages between autopilot and ground control stations, 
+it also filters and aggregates data to support communication over high latency and low bandwidth networks.

@@ -4,8 +4,8 @@ baseurl: "/spl-pdf"
 port: 4011
 output: pdf
 product: spl
-print_title: SPL documentation
-print_subtitle: version 1.0
+print_title: SPL Global Telemetry
+print_subtitle: version 2.0
 output: pdf
 defaults:
   -

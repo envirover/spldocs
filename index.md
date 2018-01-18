@@ -1,27 +1,28 @@
 ---
-title: "BLOS Telemetry Systems"
-keywords: blos, satellite, telemetry, unmanned vehicles
+title: "Envirover Software Products"
+keywords: blos, satellite, blos, telemetry, autonomous vehicles
 tags: [getting_started]
 sidebar: home_sidebar
 permalink: index.html
-summary: BLOS Telemetry Systems from Envirover.
 ---
 
-SPL and NVI are global satellite telemetry solution for unmanned vehicles controlled by [ArduPilot](http://ardupilot.org/) or [PX4](http://px4.io/) autopilot. 
-With SPL or NVI you can control your unmanned vehicle on the other side of the Earth almost the same way you would with radio telemetry. 
+Envirover provides a range of telemetry solutions for all kinds of autonomous vehicles.
 
-With SPL or NVI you can:
-- Track position, attitude, and velocity of your vehicles anywhere on Earth.
-- Monitor vital signs of your vehicles, such as battery charge, system status, and temperature.
-- Update on-board parameters and send commands and missions to your vehicles using popular ground control stations such as Mission Planner or QGrouindControl.
-- Control gymbals, and RC servos connected to autopilots.
 
-## SPL Global Telemetry
+## SPL Global Telemetry 
 
-[SPL](spl.html) uses Iridium short burst data (SBD) satellite communication technology provided by [Rock Seven Mobile](http://www.rock7mobile.com/). 
+[SPL global telemetry system](spl.html) uses Iridium short burst data (SBD) satellite communication technology provided by [Rock Seven Mobile](http://www.rock7mobile.com/). 
 
-Because of high latency and low bandwidth of Iridium SBD, SPL does not support video streaming. 
+Using SPL you can track, command, and control your solar powered boats, planes, and other autonomous vehicle with [ArduPilot](http://ardupilot.org/) or [PX4](http://px4.io/) autopilots from the other side of the Earth. 
 
-## NVI BLOS Telemetry 
+The system supports  [Mission Planner](http://ardupilot.org/planner/) and [QGroundControl](http://qgroundcontrol.com/) ground control stations (GCS) and also provides web services for storing and visualizing telemetry data in web applications.
 
-[NVI](nvi.html) is designed for satellite or cellular communication over TCP/IP protocol.
+
+## NVI BLOS Telemetry (alpha)
+
+[NVI BLOS telemetry](nvi.html) is designed to work with satellite or cellular modems such as [Iridium GO!](https://www.iridium.com/products/details/iridiumgo).
+
+NVI provides peer-to-peer communication between an autonomous vehicle with [ArduPilot](http://ardupilot.org/) or [PX4](http://px4.io/) autopilots and [Mission Planner](http://ardupilot.org/planner/) or [QGroundControl](http://qgroundcontrol.com/) ground control station.
+
+
+

@@ -3,8 +3,6 @@
 topnav:
 - title: Topnav
   items:
-    - title: GitHub
-      external_url: https://github.com/envirover/docs
 
 #Topnav dropdowns
 topnav_dropdowns:
