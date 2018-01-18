@@ -7,7 +7,7 @@ permalink: spl.html
 folder: spl
 ---
 
-SPL is a global satellite telemetry system for unmanned vehicles controlled by [ArduPilot](http://ardupilot.org/) or [px4](http://px4.io/) autopilots.
+SPL is a global satellite telemetry system for autonomous vehicles controlled by [ArduPilot](http://ardupilot.org/) or [px4](http://px4.io/) autopilots.
 
 With SPL you can:
 - Track position, attitude, and velocity of your vehicles anywhere on Earth.
@@ -23,7 +23,7 @@ SPL uses Iridium short burst data (SBD) satellite communication technology provi
 
 Iridium SBD is a high latency, low bandwidth messaging technology, yet it is relatively inexpensive compared to other global communication solutions. The required hardware is very compact and lightweight.
 
-The SPL software suite consists of firmware for ArduPilot companion computer called SPL RadioRoom and a web service application called SPL GroundControl, which serves as a proxy between ground control stations such as Mission Planer or QGroundControl and Rock7Core web services. Optional SPL Stream and SPL Tracks web services provide a solution for storing and visualizing data reported by SPL RadioRoom.
+The SPL software suite includes firmware for autopilot companion computer called SPL RadioRoom and a web service application called SPL GroundControl, which serves as a proxy between ground control stations such as Mission Planer or QGroundControl and Rock7Core web services. Optional SPL Stream and SPL Tracks web services provide a solution for storing and visualizing data reported by SPL RadioRoom.
 
 ## SPL RadioRoom
 

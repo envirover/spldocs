@@ -4,7 +4,7 @@ baseurl: "/nvi-pdf"
 port: 4012
 output: pdf
 product: NVI
-print_title: NVI documentation
+print_title: NVI BLOS Telemetry
 print_subtitle: version 1.0
 output: pdf
 defaults:
