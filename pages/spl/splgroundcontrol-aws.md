@@ -6,7 +6,7 @@ toc: false
 permalink: splgroundcontrol-aws.html
 folder: spl
 ---
-The easiest way to get started with SPLGroundControl is to deploy it on Amazon AWS using the provided CloudFormation template.
+The easiest way to get started with SPL GroundControl is to deploy it on Amazon AWS using the provided CloudFormation template.
 
 1. Create [Amazon AWS](https://aws.amazon.com/) account.
 2. Select the nearest region in AWS Console.
