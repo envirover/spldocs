@@ -7,6 +7,12 @@ permalink: spltracks-aws.html
 folder: spl
 ---
 
+SPL Stream web service saves messages received from SPL RadioRoom to AWS DynamoDB database service. SPL Tracks provides access to the reported data in GeoJSON format. 
+
+[SPL Tracks GeoJSON web service demo](http://spldemo.envirover.com/spltracks/features/?devices=300234064280890&startTime=1499736149000&endTime=1499742468000)
+
+[SPL Tracks web map demo](http://spldemo.envirover.com/spltracks/?devices=300234064280890&startTime=1499736149000&endTime=1499742468000)
+
 SPL Stream and SPL Tracks web applications could run in any java application servers. Because the application require low latency connection to DynamoDB database service, it is recommended to run these web applications in AWS EC2. 
 
 The easiest way to deploy SPLStream and SPL Tracks web applications on AWS is using [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk) service. 

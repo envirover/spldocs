@@ -1,5 +1,5 @@
 ---
-title: "Envirover Software Products"
+title: "Envirover Software"
 keywords: blos, satellite, blos, telemetry, autonomous vehicles
 tags: [getting_started]
 sidebar: home_sidebar
@@ -18,7 +18,7 @@ Using SPL you can track, command, and control your solar powered boats, planes, 
 The system supports  [Mission Planner](http://ardupilot.org/planner/) and [QGroundControl](http://qgroundcontrol.com/) ground control stations (GCS) and also provides web services for storing and visualizing telemetry data in web applications.
 
 
-## NVI BLOS Telemetry (alpha)
+## NVI BLOS Telemetry 
 
 [NVI BLOS telemetry](nvi.html) is designed to work with satellite or cellular modems such as [Iridium GO!](https://www.iridium.com/products/details/iridiumgo).
 
