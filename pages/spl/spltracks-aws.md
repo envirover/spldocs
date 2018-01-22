@@ -13,11 +13,12 @@ SPL Stream web service saves messages received from SPL RadioRoom to AWS DynamoD
 
 [SPL Tracks web map demo](http://spldemo.envirover.com/spltracks/?devices=300234064280890&startTime=1499736149000&endTime=1499742468000)
 
-SPL Stream and SPL Tracks web applications could run in any java application servers. Because the application require low latency connection to DynamoDB database service, it is recommended to run these web applications in AWS EC2. 
+Though, SPL Stream and SPL Tracks web applications could run in any java application servers, yet because the application use DynamoDB AWS service, it is recommended to run these web applications in AWS. 
 
-The easiest way to deploy SPLStream and SPL Tracks web applications on AWS is using [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk) service. 
+The easiest way to deploy SPL Stream and SPL Tracks web applications on AWS is using [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk) service. 
 
-1. Login to [AWS Console](https://console.aws.amazon.com/console/home).
+Follow these instructions to deploy SPL Stream and SPL Tracks web applications:
+1. Login to [AWS Console](https://console.aws.amazon.com/console/home) and select the AWS region.
 2. Switch to [IAM service](https://console.aws.amazon.com/iam/home) service.
 3. Select 'Roles' in the vertical menu on the left.
 4. Click on aws-elasticbeanstalk-ec2-role in the list of available roles.
@@ -32,6 +33,8 @@ The easiest way to deploy SPLStream and SPL Tracks web applications on AWS is us
 13. Select 'Preconfigured platform' option, and in the list of preconfigured platforms select 'Tomcat'.
 14. In the 'Application code' option select 'Upload your code' and select the downloaded spltracks-2.0-bin.zip.
 15. Click 'Create environment'.
-16. After the application is ready, register ```http://<application URL>/splstream/rockblock``` URL as a delivery address for your RockBBLOCK. 
+16. After the application is ready, register `http://<application URL>/splstream/rockblock` URL as a delivery address for your RockBBLOCK. 
 
-The GeoJSON web service URL will be available at ``http://<application URL>/spltracks/features/?devices=<ISBD IMEA>``. The demo web page URL will be available at ``http://spldemo.envirover.com/spltracks/?devices=<ISBD IMEA>``. Query string parameters ``startTime`` and ``endTime`` could be used to specify the time interval of the requested data.
+The GeoJSON web service URL will be available at `http://<application URL>/spltracks/features/?devices=<ISBD IMEA>`. The demo web page URL will be available at ``http://<application URL>/spltracks/?devices=<ISBD IMEA>``. 
+
+Query string parameters ``startTime`` and ``endTime`` could be used to specify the time interval of the requested data.
