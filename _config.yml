@@ -3,10 +3,10 @@ repository: envirover/docs
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Documentation 
+topnav_title: Envirover docs 
 # this appears on the top navigation bar next to the home button
 
-site_title: Envirover Software Products
+site_title: Envirover docs 
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: Envirover

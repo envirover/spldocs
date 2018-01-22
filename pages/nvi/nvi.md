@@ -7,7 +7,7 @@ permalink: nvi.html
 folder: nvi
 ---
 
-NVI BLOS telemetry is designed to work with satellite or cellular modems such as
+NVI Beyond Line of Sight (BLOS) telemetry is designed to work with satellite or cellular modems such as
 [Iridium GO!](https://www.iridium.com/products/details/iridiumgo).
 
 NVI provides peer-to-peer communication between an autonomous vehicle with 
