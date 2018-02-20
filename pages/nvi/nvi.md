@@ -7,7 +7,7 @@ permalink: nvi.html
 folder: nvi
 ---
 
-NVI Beyond Line of Sight (BLOS) telemetry is designed to work with satellite or cellular modems such as
+NVI Beyond Line of Sight (BLOS) telemetry for unmanned vehicles is designed to work with satellite or cellular modems such as
 [Iridium GO!](https://www.iridium.com/products/details/iridiumgo).
 
 NVI provides peer-to-peer communication between an autonomous vehicle with 
@@ -20,5 +20,5 @@ NVI provides peer-to-peer communication between an autonomous vehicle with
 The NVI software suite includes firmware for the autopilot companion computer [NVI RadioRoom](nviradioroom.html) and  
 a TCP/IP server application [NVI GroundControl](nvigroundcontrol.html). 
 
-NVI not simply transmits messages between autopilot and ground control stations, 
+NVI not simply transmits messages between autopilots and ground control stations, 
 it also filters and aggregates data to support communication over high latency and low bandwidth networks.
