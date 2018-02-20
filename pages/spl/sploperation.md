@@ -15,8 +15,6 @@ Launch QGroundControl, go to “Comm Links” application settings, and create a
 
 Connect to the created comm link.
 
-❗️ Unplug radio telemetry modules from the computer and disconnect other comm links before connection to SPL GroundControl, otherwise QGroundControl will frequently switch between the connections. 
-
 ## Testing the Comm Link
 
 To test the comm link it is recommended to arm and disarm the vehicle using SPL connection and check the vehicle status and position reported by the vehicle.
@@ -55,6 +53,20 @@ Each waypoint in the mission is sent to the vehicle in a separate MAVLink messag
 Iridium SBD is capable of sending and receiving about 1 message per minute. Though SPL does not limit the number of items in a mission, sending very large missions is not recommended.
 
 SPL GroundControl immediately acknowledges an uploaded mission, however sending the mission to the vehicle over Iridium SBD may take a long time, depending on the number of waypoints in the mission and quality of the satellite link. As soon as SPL RadioRoom receives all the mission items is writes the mission to the autopilot and sends the acknowledgement back to SPL GroundControl. After receiving the acknowledgement, SPL GroundControl updates the mission items in the reported state of the vehicle’s “shadow”. The reported state is returned to the ground control station clients when they read the missions. SPL RadioRoom suspends all other operations while it handles the missions. 
+
+## Using SPL With Other Comm Links
+
+When SPL is used with other comm links such as radio telemetry, make sure that the GCS is not connected to the vehicle using both of the comm links at the same time. For QGroundControl GCS it is recommended to turn off AutoConnect in the general application settings.
+
+SPL GroundControl stores in the vehicle's "shadow" uploaded missions and updated parameter values if they were sent to the vehicle through SPL comm link. If missions or parameters were changed using other comm links, to keep the shadow in sync with the vehicle's state it is recommended to update the missions and parameters in the shadow by connecting GCS to a special "shadow" port 5757.
+
+To update missions or parameters in the shadow:
+- Connect GCS to TCP port 5757 of SPL GroundControl,
+- Upload the missions,
+- Disconnect from  TCP port 5757,
+- Connect GCS to port 5760,
+- Download the missions.
+
 
 ## Troubleshooting the Comm Link
 
