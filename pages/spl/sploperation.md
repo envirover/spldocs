@@ -58,7 +58,7 @@ SPL GroundControl immediately acknowledges an uploaded mission, however sending 
 
 When SPL is used with other comm links such as radio telemetry, make sure that the GCS is not connected to the vehicle using both of the comm links at the same time. For QGroundControl GCS it is recommended to turn off AutoConnect in the general application settings.
 
-SPL GroundControl stores in the vehicle's "shadow" uploaded missions and updated parameter values if they were sent to the vehicle through SPL comm link. If missions or parameters were changed using other comm links, to keep the shadow in sync with the vehicle's state it is recommended to update the missions and parameters in the shadow by connecting GCS to a special "shadow" port 5757.
+SPL GroundControl stores in the vehicle's "shadow" uploaded missions and updated parameter values if they were sent to the vehicle through the SPL comm link. If missions or parameters were changed using other comm links, to keep the shadow in sync with the vehicle's state it is recommended to update the missions and parameters in the shadow by connecting GCS to a special "shadow" port 5757.
 
 To update missions or parameters in the shadow:
 - Connect GCS to TCP port 5757 of SPL GroundControl,
