@@ -1,7 +1,7 @@
 ---
 title: SPL System Requirements
 keywords: spl, ardupilot, mavlink, rockblock, satellite, telemetry, iridium, system requirements
-sidebar: spl_sidebar
+sidebar: home_sidebar
 toc: false
 permalink: splrequirements.html
 folder: spl
