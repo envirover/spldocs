@@ -20,10 +20,13 @@ entries:
   - title: Introduction
     output: web, pdf
     folderitems:
+    - title: What's New in SPL 2.1
+      url: /
+      output: web, pdf    
     - title: About SPL
       url: /spl.html
       output: web, pdf
-    - title: RadioRoom
+    - title: UV Radio Room
       url: /radioroom.html
       output: web, pdf    
     - title: UV Hub
