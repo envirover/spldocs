@@ -18,11 +18,11 @@ Deploying UV Hub system on AWS requires the following data and services:
 
 ## Installation
 
-Follow these steps to deploy UV Hub and UV Tracks on AWS:
+Follow these steps to deploy UV Hub and UV Tracks servers on AWS:
 1. Open [AWS Console](https://aws.amazon.com/) and select the AWS region.
 2. [Create a key pair in EC2 service](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair).
-3. [![Launch Stack](images/cloudformation-launch-stack.png)]( https://console.aws.amazon.com/cloudformation/home?#/stacks/new?stackName=uvhub&templateURL=https://s3-us-west-2.amazonaws.com/envirover/UVHub/uvhub.template)
-5. Enter the RockBLOCK IMEI, Rock 7 user name and password, and other CloudFormation stack's input parameters. Select the key pair name in the KeyName input parameter drop-down list.
+3. [![Launch Stack](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?#/stacks/new?stackName=uvhub&templateURL=https://s3-us-west-2.amazonaws.com/envirover/UVHub/uvhub.template)
+5. Enter the RockBLOCK IMEI, Rock 7 user name and password, and other CloudFormation stack's input parameters. Select the key pair name in the KeyName input parameter drop-down list. Make sure that values of `MAVAutopilot` and `MAVType` input parameters match your autopilot firmware.
 6. Complete the stack creation wizard and wait until the stack creation is completed.  Once the stack creation is successfully completed, the stack output parameters will be available.
 7. Register URL specified by `RockBLOCKHandlerURL` output parameter as delivery address in [Rock 7 Core services](https://rockblock.rock7.com/Operations) for your RockBLOCK.
 8. Use the IP address and port number specified by `RadioRoomClientURL` output parameter to set `host` and `port` configuration properties of [tcp] configuration section in radioroom.conf UV Radio Room configuration file.
@@ -36,7 +36,7 @@ By default the stack creates two EC2 instances of t2.micro type. t2.micro instan
 
 ## Tightening Security
 
-By default ports 5760 and 5757 can be accessed from any client IP address. That is anybody who knows IP address of UV Hub server can connect to it and control your vehicle. To make these ports accessible just from your machine, Specify the client CIDR using `ClientCIDR` stack's input parameter, or after the stack is created, change the in-bound rules for ports 5760 and 5757 in the EC2 security group created by the stack. Determine the public IP address of the GCS machine ([http://checkip.amazonaws.com/](http://checkip.amazonaws.com/)) and set the source IP address for the ports to `<IP address>/32`. 
+By default ports 5760 and 5757 can be accessed from any client IP address. That is anybody who knows IP address of UV Hub server can connect to it and control your vehicle. To make these ports accessible just from your machine, Specify the client CIDR using `ClientCIDR` stack's input parameter, or after the stack is created, change the in-bound rules for ports 5760 and 5757 in the EC2 security group created by the stack. Determine the public IP address of the GCS machine ([http://checkip.amazonaws.com/](http://checkip.amazonaws.com/)) and set the source IP address for the ports to `<IP address>/32`. Make sure that the security group in-bound rules are updated whenever the GCS clients IP addresses are changed.
 
 Access to port 8080 is used for delivery of mobile originated messages from RockBLOCK is restricted to originating IP addresses `109.74.196.135` and `212.71.235.32` of Rock 7 services.
 

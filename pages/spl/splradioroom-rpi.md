@@ -33,6 +33,8 @@ It is recommended to connect RockBLOCK module using [FTDI USB to UART cable](htt
 
 Connect the cellular or satellite Internet modem to Raspberry Pi as recommended by the modem manufacturer. The modems are not shown on the diagram.
 
+UV Radio Room 2.1 supports only version 1.0 of MAVLink protocol. Make sure that SERIAL0_PROTOCOL and SERIAL1_PROTOCOL or SERIAL2_PROTOCOL on-board parameters are set to 1.
+
 Though +5V TELEM pin on Pixhawk is rated for up to 2A peak power draw, it is recommended to power Raspberry Pi using a dedicated power source, especially if both RockBLOCK and a cellular modems are powered from the Raspberry Pi USB ports.
 
 ## Installing

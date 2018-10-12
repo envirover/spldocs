@@ -35,12 +35,12 @@ entries:
   - title: Installation
     output: web, pdf
     folderitems:
+    - title: UV Hub and UV Tracks Installation on Amazon AWS
+      url: /uvhub-aws.html
+      output: web, pdf   
     - title: UV Radio Room Installation on Raspberry Pi
       url: /splradioroom-rpi.html
       output: web, pdf
-    - title: UV Hub and UV Tracks Installation on Amazon AWS
-      url: /uvhub-aws.html
-      output: web, pdf      
   - title: Operation
     output: web, pdf
     folderitems:
