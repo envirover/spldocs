@@ -37,6 +37,10 @@ UV Radio Room 2.1 supports only version 1.0 of MAVLink protocol. Make sure that 
 
 Though +5V TELEM pin on Pixhawk is rated for up to 2A peak power draw, it is recommended to power Raspberry Pi using a dedicated power source, especially if both RockBLOCK and a cellular modems are powered from the Raspberry Pi USB ports.
 
+![Radio Room with Raspberry Pi Zero W, RockBLOCK 9603, and Hologram Nova modem](images/radioroom.jpg)
+
+_Radio Room setup with Raspberry Pi Zero W, RockBLOCK 9603, and Hologram Nova modem_
+
 ## Installing
 
 To install Radio Room on Raspberry Pi:
