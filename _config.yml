@@ -37,7 +37,7 @@ exclude:
 
 feedback_subject_line: Envirover docs
 
-feedback_email: pb@envirover.com
+feedback_email: info@envirover.com
 # used as a contact email for the Feedback link in the top navigation bar
 
 # feedback_disable: true
@@ -103,7 +103,6 @@ defaults:
 sidebars:
 - home_sidebar
 - spl_sidebar
-- nvi_sidebar
 
 description: "Envirover software documentation."
 # the description is used in the feed.xml file

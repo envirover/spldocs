@@ -4,13 +4,4 @@ topnav:
 - title: Topnav
   items:
 
-#Topnav dropdowns
-topnav_dropdowns:
-- title: Topnav dropdowns
-  folders:
-    - title: Products
-      folderitems:
-        - title: SPL Global Telemetry
-          url: /spl.html
-        - title: NVI BLOS Telemetry
-          url: /nvi.html
+

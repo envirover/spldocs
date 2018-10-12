@@ -1,18 +1,53 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
 entries:
-- title: Sidebar
-  levels: one
+- title: SPL Global Telemetry
+  product: SPL Global Telemetry
+  version: 2.1
   folders:
-  - title: Products
-    output: web
+  - title:
+    output: pdf
+    type: frontmatter
     folderitems:
-    - title: Overview
-      url: /index.html
-      output: web    
-    - title: SPL Global Telemetry
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+  - title: Introduction
+    output: web, pdf
+    folderitems:
+    - title: About SPL
       url: /spl.html
-      output: web
-    - title: NVI BLOS Telemetry
-      url: /nvi.html
-      output: web
+      output: web, pdf
+    - title: RadioRoom
+      url: /radioroom.html
+      output: web, pdf    
+    - title: UV Hub
+      url: /uvhub.html
+      output: web, pdf  
+    - title: UV Tracks
+      url: /uvtracks.html
+      output: web, pdf  
+  - title: Installation
+    output: web, pdf
+    folderitems:
+    - title: UV Hub and UV Tracks Installation on Amazon AWS
+      url: /uvhub-aws.html
+      output: web, pdf   
+    - title: UV Radio Room Installation on Raspberry Pi
+      url: /splradioroom-rpi.html
+      output: web, pdf
+  - title: Operation
+    output: web, pdf
+    folderitems:
+    - title: SPL Operation Instructions
+      url: /sploperation.html
+      output: web, pdf   
+    - title: UV Tracks REST API
+      url: /uvtracks-apidocs.html
+      output: web, pdf  
+   

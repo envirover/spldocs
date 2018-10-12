@@ -1,29 +1,17 @@
 ---
-title: "Envirover Software"
-keywords: spl, nvi, blos, satellite, telemetry, autonomous vehicles
+title: "What's New "
+keywords: spl, blos, satellite, telemetry, unmanned vehicles
 tags: [getting_started]
 sidebar: home_sidebar
 toc: false
+summary: Version 2.1 of SPL global telemetry system is now available.
 permalink: index.html
 ---
 
-Envirover provides a range of telemetry solutions for all kinds of autonomous vehicles.
+SPL 2.1 includes the following new features:
+- Supports both Iridium SBD and the Internet comm links. The system can be configured to use only one channel, or two channels in fail-over mode. For example, slower and more expensive ISBD channel could be used only when WiFi or cellular Internet connection is not available.
+- Supports persistent shadow that stores reported states, mission plans, and on-board parameters of the vehicles. A web service provides read access to the shadow's data.
+- Includes a new 3D vehicle tracking sample web application that shows both vehicle tracks and missions.
+- Simplifies the server software deployment.
 
-
-## SPL Global Telemetry 
-
-[SPL](spl.html) global telemetry system uses Iridium short burst data (SBD) satellite communication technology provided by [Rock Seven Mobile](http://www.rock7mobile.com/). 
-
-Using SPL you can track, command, and control your solar powered boats, planes, and other autonomous vehicle with [ArduPilot](http://ardupilot.org/) or [PX4](http://px4.io/) autopilots from the other side of the Earth. 
-
-The system supports  [Mission Planner](http://ardupilot.org/planner/) and [QGroundControl](http://qgroundcontrol.com/) ground control stations (GCS) and also provides web services for storing and visualizing telemetry data in web applications.
-
-
-## NVI BLOS Telemetry 
-
-[NVI](nvi.html) Beyond Line of Sight (BLOS) telemetry is designed to work with satellite or cellular modems such as [Iridium GO!](https://www.iridium.com/products/details/iridiumgo).
-
-NVI provides peer-to-peer communication between an autonomous vehicle with [ArduPilot](http://ardupilot.org/) or [PX4](http://px4.io/) autopilots and [Mission Planner](http://ardupilot.org/planner/) or [QGroundControl](http://qgroundcontrol.com/) ground control station.
-
-
-
+In SPL 2.1 SPL GroundControl and SPL Stream servers were replaced by [UV Hub](uvhub.html) server. SPL Tracks server was redesigned and renamed to [UV Tracks](uvtracks.html).
