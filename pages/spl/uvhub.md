@@ -7,7 +7,7 @@ permalink: uvhub.html
 folder: spl
 ---
 
-UV Hub is a server application that brokers communication with unmanned vehicles controlled by ArduPilot or PX4 autopilots over the Internet and/or RockBLOCK/ISBD communication channels. It is designed to work with <a href="http://envirover.com/docs/radioroom.html">UV Radio Room</a> companion computer, providing two way communication between the autopilots and ground control stations such as Mission Planer or QGroundControl.
+UV Hub is a server application that brokers communication with unmanned vehicles controlled by ArduPilot or PX4 autopilots over the Internet and/or RockBLOCK/ISBD communication channels. It is designed to work with <a href="http://envirover.com/docs/radioroom.html">UV Radio Room</a> companion computer, providing two-way communication between the autopilots and ground control stations such as Mission Planer or QGroundControl.
 
 UV Hub not only forwards messages from the autopilot to the communication channels, it also filters, queues, and buffers the messages when required.
 

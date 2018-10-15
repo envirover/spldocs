@@ -19,7 +19,7 @@ UV RadioRoom system requires the following hardware and software:
 
 ## Wiring 
 
-UV Radio Room uses serial devices to communicate with autopilot and ISBD transceiver. Cellular or satellite Internet modems cold be connected using USB, Ethernet, or WiFi connections.
+UV Radio Room uses serial devices to communicate with autopilot and ISBD transceiver. Cellular or satellite Internet modems could be connected using USB, Ethernet, or Wi-Fi connections.
 
 ![UV Radio Room Wiring](images/radioroom-wiring.jpg)
 
@@ -35,7 +35,7 @@ Connect the cellular or satellite Internet modem to Raspberry Pi as recommended 
 
 UV Radio Room 2.1 supports only version 1.0 of MAVLink protocol. Make sure that SERIAL0_PROTOCOL and SERIAL1_PROTOCOL or SERIAL2_PROTOCOL on-board parameters are set to 1.
 
-Though +5V TELEM pin on Pixhawk is rated for up to 2A peak power draw, it is recommended to power Raspberry Pi using a dedicated power source, especially if both RockBLOCK and a cellular modems are powered from the Raspberry Pi USB ports.
+Though +5V TELEM pin on Pixhawk is rated for up to 2A peak power draw, it is recommended to power Raspberry Pi using a dedicated power source, especially if both RockBLOCK and the cellular modem are powered from the Raspberry Pi USB ports.
 
 ![Radio Room with Raspberry Pi Zero W, RockBLOCK 9603, and Hologram Nova modem](images/radioroom.jpg)
 
