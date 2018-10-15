@@ -17,6 +17,6 @@ UV Radio Room tries to send mobile-originated messages using the primary channel
 
 Regular radio-telemetry communication between MAVLink-based autopilots and CGSs involves multiple MAVLink messages sent several times per second both ways. This protocol is too chatty for slow and expensive ISBD channel. Radio Room compresses attributes of multiple messages into [HIGH_LATENCY](https://mavlink.io/en/messages/common.html#HIGH_LATENCY) MAVLink message appropriate for high latency connections like Iridium SBD. The HIGH_LATENCY messages periodically are sent to the communication channels.
 
-When GCS client sends mission items to UV Hub, first the all the items are buffered in the desired state of the UV Shadow and then UV Hub sends them to UV Radio Room, one mission item per message. Radio Room buffers all the mission items first and then sends them to the autopilot in a quick succession. The mission acknowledgement from the autopilot is sent back to the GCS. 
+When GCS client sends mission items to UV Hub, first the all the items are buffered in the desired state of the UV Shadow and then UV Hub sends them to UV Radio Room, one mission item per message. Radio Room buffers all the mission items first and then sends them to the autopilot in a quick succession. The mission acknowledgment from the autopilot is sent back to the GCS. 
 
 UV Radio Room can run on almost any Linux computer. Envirover provides UV Radio Room [installation packages](https://github.com/envirover/SPLRadioRoom/releases) and [instructions for Raspberry Pi](splradioroom-rpi.html) only. 

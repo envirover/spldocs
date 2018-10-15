@@ -48,11 +48,11 @@ When an on-board parameter value is changed by a ground control station client, 
 
 SPL supports uploading missions to vehicles. Uploading fences and rally points is not currently supported by SPL.  
 
-Each waypoint in the mission is sent to the vehicle in a separate MAVLink message. In addition one message is sent with the total number of uploaded mission items and one message is sent back from the vehicle to acknowledge that the mission was accepted by the vehicle. 
+Each waypoint in the mission is sent to the vehicle in a separate MAVLink message. In addition, one message is sent with the total number of uploaded mission items and one message is sent back from the vehicle to acknowledge that the mission was accepted by the vehicle. 
 
 Iridium SBD is capable of sending and receiving about 1 message per minute. Though SPL does not limit the number of items in a mission, sending very large missions over Iridium SBD channel is not recommended.
 
-UV Hub immediately acknowledges an uploaded mission, however sending the mission to the vehicle over Iridium SBD may take a long time, depending on the number of waypoints in the mission and quality of the satellite link. As soon as UV Radio Room receives all the mission items is writes the mission to the autopilot and sends the acknowledgement back to UV Hub. After receiving the acknowledgement, UV Hub updates the mission items in the reported state of the vehicle’s “shadow”. The reported state is returned to the ground control station clients when they read the missions. UV Radio Room suspends all other operations while it handles the missions. 
+UV Hub immediately acknowledges an uploaded mission, however sending the mission to the vehicle over Iridium SBD may take a long time, depending on the number of waypoints in the mission and quality of the satellite link. As soon as UV Radio Room receives all the mission items is writes the mission to the autopilot and sends the acknowledgment back to UV Hub. After receiving the acknowledgment, UV Hub updates the mission items in the reported state of the vehicle’s “shadow”. The reported state is returned to the ground control station clients when they read the missions. UV Radio Room suspends all other operations while it handles the missions. 
 
 ## Using SPL With Other Comm Links
 

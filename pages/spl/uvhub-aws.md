@@ -32,7 +32,7 @@ Follow these steps to deploy UV Hub and UV Tracks servers on AWS:
 
 ![UV Hub CloudFormation template](images/uvhub-cf.jpg)
 
-By default the stack creates two EC2 instances of t2.micro type. t2.micro instances are eligible for [AWS free tier](https://aws.amazon.com/s/dm/optimization/server-side-test/free-tier/free_np/). The stack also creates [AWS Elasticsearch service](https://aws.amazon.com/elasticsearch-service/) instance of t2.small.elasticsearch type.
+By default, the stack creates two EC2 instances of t2.micro type. t2.micro instances are eligible for [AWS free tier](https://aws.amazon.com/s/dm/optimization/server-side-test/free-tier/free_np/). The stack also creates [AWS Elasticsearch service](https://aws.amazon.com/elasticsearch-service/) instance of t2.small.elasticsearch type.
 
 ## Tightening Security
 
