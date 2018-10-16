@@ -35,6 +35,9 @@ entries:
     - title: UV Tracks
       url: /uvtracks.html
       output: web, pdf  
+    - title: Terms of Use
+      url: /legal.html
+      output: web, pdf 
   - title: Installation
     output: web, pdf
     folderitems:
