@@ -53,6 +53,6 @@ To connect to the EC2 instance and view the logs:
 2. Select "Instances" tab in the left-side tabs,
 3. Select the EC2 instances and click "Connect" button,
 4. In the "Connect to your instance" dialog box select "Session Manager" as connection method and click "Connect" button in the dialog box.
-5. In the appeared Session Manager terminal windows enter:
+5. In the appeared Session Manager terminal enter:
 
    `sudo tail -n 100 /var/log/messages`
