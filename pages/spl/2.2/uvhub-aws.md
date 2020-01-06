@@ -7,7 +7,7 @@ permalink: uvhub-aws.html
 folder: spl
 ---
 
-This page provides steps-by-step instructions for deployment of SPL server components on Amazon Web Services (AWS) cloud computing platform.
+This page provides steps-by-step instructions for deployment of SPL server components ([UV Hub](uvhub.html), [UV Shadow](uvshadow.html), [UV Tracks](uvtracks.html), and [UV Cockpit](uvcockpit.html)) on Amazon Web Services (AWS) cloud computing platform.
 
 ## System Requirements
 
@@ -45,4 +45,14 @@ Controlling access to port 5060 used by TCP/IP connections from UV Radio Room ba
 
 ## Troubleshooting
 
-`CloudWatchLogs` stack output parameters links to the CloudWatch log group with UV Hub and UV Tracks servers logs.
+UV Hub and UV Tracks servers logs are stored in /var/log/messages file on the EC2 instance.
+
+To connect to the EC2 instance and view the logs:
+
+1. In AWS Console select EC2 service,
+2. Select "Instances" tab in the left-side tabs,
+3. Select the EC2 instances and click "Connect" button,
+4. In the "Connect to your instance" dialog box select "Session Manager" as connection method and click "Connect" button in the dialog box.
+5. In the appeared Session Manager terminal windows enter:
+
+   `sudo tail -n 100 /var/log/messages`
