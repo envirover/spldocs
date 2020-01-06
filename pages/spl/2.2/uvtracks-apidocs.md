@@ -23,7 +23,7 @@ The description of each operation also includes the required HTTP method.
 
 ### GetTracks
 
-Returns reported positions and state information of the vehicle in <a href="http://geojson.org">GeoJSON</a> format.
+Returns reported positions and state information of the vehicle in <a href="https://geojson.org">GeoJSON</a> format.
 
 #### Syntax
 

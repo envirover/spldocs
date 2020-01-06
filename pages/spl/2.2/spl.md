@@ -7,7 +7,7 @@ permalink: spl.html
 folder: spl
 ---
 
-SPL is a global satellite telemetry system for autonomous vehicles controlled by [ArduPilot](http://ardupilot.org/) or [PX4](http://px4.io/) autopilots. With SPL you can track, command, and control your solar powered boats, planes, blimps, and other autonomous vehicle from the other side of the Earth.
+SPL is a global satellite telemetry system for autonomous vehicles controlled by [ArduPilot](http://ardupilot.org/) or [PX4](https://px4.io/) autopilots. With SPL you can track, command, and control your solar powered boats, planes, blimps, and other autonomous vehicle from the other side of the Earth.
 
 SPL supports TCP/IP Internet connections and Iridium short burst data (ISBD) satellite communication technology provided by [Rock Seven Mobile](http://www.rock7mobile.com/products-rockblock).
 
