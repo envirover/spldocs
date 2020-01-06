@@ -13,7 +13,7 @@ UV Radio Room is an application for companion computer of MAVLink-based autopilo
 
 UV RadioRoom system requires the following hardware and software:
 
-* Autopilot such as Pixhawk with [ArduPilot](http://ardupilot.org/) or [PX4](http://px4.io/) firmware;
+* Autopilot such as Pixhawk with [ArduPilot](http://ardupilot.org/) or [PX4](https://px4.io/) firmware;
 * Raspberry Pi computer with [Raspbian Stretch](https://www.raspberrypi.org/downloads/raspbian/) Desktop or Light;
 * Activated [RockBLOCK Mk2](http://www.rock7mobile.com/products-rockblock) or [RockBLOCK 9603](http://www.rock7mobile.com/products-rockblock-9603) Iridium satellite communication module with FTDI USB to UART cable.
 * Cellular or satellite Internet modem.
