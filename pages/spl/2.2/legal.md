@@ -3,7 +3,7 @@ title: Terms of Use
 keywords: spl, legal, eula
 sidebar: home_sidebar
 toc: false
-permalink: legal.html
+permalink: 2.2/legal.html
 folder: spl
 ---
 

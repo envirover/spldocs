@@ -3,7 +3,7 @@ title: UV Hub and UV Tracks End User License Agreement (EULA)
 keywords: spl, uv hub, eula
 sidebar: home_sidebar
 toc: false
-permalink: uvhub-eula.html
+permalink: 2.2/uvhub-eula.html
 folder: spl
 ---
 

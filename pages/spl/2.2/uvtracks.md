@@ -3,7 +3,7 @@ title: UV Tracks
 keywords: spl, mavlink, uv shadow, rest, api, service
 sidebar: home_sidebar
 toc: false
-permalink: uvtracks.html
+permalink: 2.2/uvtracks.html
 folder: spl
 ---
 
