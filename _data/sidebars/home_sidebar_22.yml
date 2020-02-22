@@ -3,7 +3,7 @@
 entries:
 - title: SPL Global Telemetry
   product: SPL Global Telemetry
-  version: 2.3
+  version: 2.2
   folders:
   - title:
     output: pdf
@@ -20,7 +20,7 @@ entries:
   - title: Introduction
     output: web, pdf
     folderitems:
-    - title: What's New in SPL 2.3
+    - title: What's New in SPL 2.2
       url: /index.html
       output: web, pdf    
     - title: About SPL
@@ -68,9 +68,6 @@ entries:
   - title: Other Versions
     output: web
     folderitems:
-    - title: SPL Global Telemetry 2.2
-      url: 2.2
-      output: web 
     - title: SPL Global Telemetry 2.1
       url: 2.1
       output: web 
