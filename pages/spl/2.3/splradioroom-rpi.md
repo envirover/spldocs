@@ -68,6 +68,8 @@ USB device paths /dev/ttyUSB0, /dev/ttyUSB1, ... can swap after reboot. For USB 
 
 Radio Room periodically reports the vehicle's position, attitude, velocity, and other data using HIGH_LATENCY MAVLink message. The message size is 48 bytes. Each report consumes 1 RockBLOCK credit. The reporting period default value is 60 seconds. It can be changed by setting report_period configuration property in /etc/radioroom.conf.
 
+UV RadioRoom relies on TCP keepalive mechanism to detect broken connections. Reliable detection of broken connection is required to reconnect to restarted UV Hub server and to failover to ISBD channel when TCP channel is not healthy. The 7200 seconds system default setting for keepalive time is typically too large. It's recommended to adjust the system default settings for tcp_keepalive_time, tcp_keepalive_intvl, and tcp_keepalive_probes to reduce time required to detect broken connections. See https://tldp.org/HOWTO/TCP-Keepalive-HOWTO/usingkeepalive.html for TCP keepalive configuration HOWTO.
+
 Raspberry Pi requires an orderly shutdown procedure, otherwise the SD card may become corrupted and the system will no longer boot. To prevent the SD card corruption during power cuts it is recommended to [configure Raspbian to work in a read-only mode](https://learn.adafruit.com/read-only-raspberry-pi/). Alternatively, UPS and a shutdown circuit could be used to orderly shutdown Raspberry Pi after power cuts.
   
 ## Troubleshooting
