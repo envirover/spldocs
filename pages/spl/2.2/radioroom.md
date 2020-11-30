@@ -1,7 +1,7 @@
 ---
 title: UV Radio Room 
 keywords: spl, ardupilot, px4, mavlink, rockblock, satellite, telemetry, iridium, radio room, isbd
-sidebar: home_sidebar
+sidebar: home_sidebar_22
 toc: false
 permalink: 2.2/radioroom.html
 folder: spl

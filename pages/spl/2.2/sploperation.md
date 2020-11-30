@@ -1,7 +1,7 @@
 ---
 title: SPL Operation Instructions
 keywords: spl, ardupilot, mavlink, rockblock, satellite, telemetry, iridium
-sidebar: home_sidebar
+sidebar: home_sidebar_22
 toc: false
 permalink: 2.2/sploperation.html
 folder: spl

@@ -1,9 +1,9 @@
 ---
 title: UV Radio Room Installation on Raspberry Pi
 keywords: spl, ardupilot, mavlink, rockblock, satellite, telemetry, iridium, unmanned vehicle, raspberry pi
-sidebar: home_sidebar
+sidebar: home_sidebar_23
 toc: false
-permalink: splradioroom-rpi.html
+permalink: 2.3/splradioroom-rpi.html
 folder: spl
 ---
 

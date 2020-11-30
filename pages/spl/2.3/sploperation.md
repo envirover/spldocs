@@ -1,9 +1,9 @@
 ---
 title: SPL Operation Instructions
 keywords: spl, ardupilot, mavlink, rockblock, satellite, telemetry, iridium
-sidebar: home_sidebar
+sidebar: home_sidebar_23
 toc: false
-permalink: sploperation.html
+permalink: 2.3/sploperation.html
 folder: spl
 summary: This page describes guidelines for operating SPL global telemetry after it was set up.
 ---

@@ -1,7 +1,7 @@
 ---
 title: UV Cockpit 
 keywords: spl, mavlink, uv shadow, rest, api, service
-sidebar: home_sidebar
+sidebar: home_sidebar_22
 toc: false
 permalink: 2.2/uvcockpit.html
 folder: spl
