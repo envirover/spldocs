@@ -1,9 +1,9 @@
 ---
 title: UV Shadow
 keywords: spl, mavlink, rockblock, satellite, telemetry, isbd, ArduPilot, PX4, Rock7Core
-sidebar: home_sidebar
+sidebar: home_sidebar_23
 toc: false
-permalink: uvshadow.html
+permalink: 2.3/uvshadow.html
 folder: spl
 ---
 

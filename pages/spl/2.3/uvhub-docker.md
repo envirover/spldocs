@@ -1,9 +1,9 @@
 ---
 title: UV Hub Deployment with Docker Containers
 keywords: spl, ardupilot, rockblock, satellite, telemetry, iridium, isbd, docker
-sidebar: home_sidebar
+sidebar: home_sidebar_23
 toc: false
-permalink: uvhub-docker.html
+permalink: 2.3/uvhub-docker.html
 folder: spl
 ---
 

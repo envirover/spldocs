@@ -1,9 +1,9 @@
 ---
 title: UV Hub Deployment on Amazon AWS
 keywords: spl, ardupilot, rockblock, satellite, telemetry, iridium, isbd, amazon, aws
-sidebar: home_sidebar
+sidebar: home_sidebar_23
 toc: false
-permalink: uvhub-aws.html
+permalink: 2.3/uvhub-aws.html
 folder: spl
 ---
 

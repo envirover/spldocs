@@ -65,9 +65,3 @@ entries:
     - title: UV Tracks REST API
       url: /uvtracks-apidocs.html
       output: web, pdf  
-  - title: Other Versions
-    output: web
-    folderitems:
-    - title: SPL Global Telemetry 2.1
-      url: 2.1
-      output: web 

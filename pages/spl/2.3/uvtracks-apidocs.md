@@ -1,9 +1,9 @@
 ---
 title: UV Tracks REST API v2
 keywords: spl, mavlink, rockblock, satellite, telemetry, rest, api, service
-sidebar: home_sidebar
+sidebar: home_sidebar_23
 toc: false
-permalink: uvtracks-apidocs.html
+permalink: 2.3/uvtracks-apidocs.html
 folder: spl
 ---
 

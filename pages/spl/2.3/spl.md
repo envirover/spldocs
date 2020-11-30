@@ -1,9 +1,9 @@
 ---
 title: SPL Global Telemetry
 keywords: spl, ardupilot, mavlink, rockblock, satellite, telemetry, iridium, unmanned vehicle
-sidebar: home_sidebar
+sidebar: home_sidebar_23
 toc: false
-permalink: spl.html
+permalink: 2.3/spl.html
 folder: spl
 ---
 
