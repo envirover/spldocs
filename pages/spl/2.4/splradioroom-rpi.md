@@ -74,7 +74,7 @@ UV Radio Room camera handlers execute custom Linux shell commands on MAVLink com
 
 The camera handlers are defined in [camera_handler] section in /etc/radioroom.conf file and executed when correspondent commands are received from one of the UV Radio Room's channel or when the autopilot confirms reaching of a mission item with a correspondent command.
 
-The Linux shell commands may include {{param1}}, ..., {{param8}} variables that during the command execution will be replaced by values of the correspondent MAVLink command parameters.
+The Linux shell commands may include {% raw %}{{param1}}, ..., {{param8}}{% endraw %} variables that during the command execution will be replaced by values of the correspondent MAVLink command parameters.
 
 ## Troubleshooting
 
