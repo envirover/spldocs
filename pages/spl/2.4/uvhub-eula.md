@@ -1,9 +1,9 @@
 ---
 title: End User License Agreement (EULA)
 keywords: spl, uv hub, eula
-sidebar: home_sidebar
+sidebar: home_sidebar_24
 toc: false
-permalink: uvhub-eula.html
+permalink: 2.4/uvhub-eula.html
 folder: spl
 ---
 

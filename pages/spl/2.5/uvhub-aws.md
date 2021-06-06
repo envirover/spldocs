@@ -1,9 +1,9 @@
 ---
 title: UV Hub Deployment on Amazon AWS
 keywords: spl, ardupilot, rockblock, satellite, telemetry, iridium, isbd, amazon, aws
-sidebar: home_sidebar_24
+sidebar: home_sidebar
 toc: false
-permalink: 2.4/uvhub-aws.html
+permalink: uvhub-aws.html
 folder: spl
 ---
 
@@ -23,7 +23,7 @@ Deploying SPL servers on AWS requires the following prerequisites:
 Follow these steps to deploy UV Hub and UV Tracks servers on AWS:
 
 1. Open [AWS Console](https://aws.amazon.com/) and select the AWS region.
-2. [![Launch Stack](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?#/stacks/new?stackName=uvhub&templateURL=https://envirover.s3-us-west-2.amazonaws.com/spl/2.4.0/uvhub.template)
+2. [![Launch Stack](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?#/stacks/new?stackName=uvhub&templateURL=https://envirover.s3-us-west-2.amazonaws.com/spl/2.5.0/uvhub.template)
 3. Enter the RockBLOCK IMEI, Rock 7 user name and password, and other CloudFormation stack's input parameters. Make sure that values of `MAVAutopilot` and `MAVType` input parameters match your autopilot firmware.
 4. Complete the stack creation wizard and wait until the stack creation is completed.  Once the stack creation is successfully completed, the stack output parameters will be available.
 5. Register URL specified by `RockBLOCKHandlerURL` output parameter as delivery address in [Rock 7 Core services](https://rockblock.rock7.com/Operations) for your RockBLOCK. Choose HTTP_POST as the delivery format.

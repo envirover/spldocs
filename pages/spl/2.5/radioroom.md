@@ -1,9 +1,9 @@
 ---
 title: UV Radio Room 
 keywords: spl, ardupilot, px4, mavlink, rockblock, satellite, telemetry, iridium, radio room, isbd
-sidebar: home_sidebar_24
+sidebar: home_sidebar
 toc: false
-permalink: 2.4/radioroom.html
+permalink: radioroom.html
 folder: spl
 ---
 
@@ -15,7 +15,7 @@ UV Radio Room can be configured to work with just one communication channel or w
 
 UV Radio Room tries to send mobile-originated messages using the primary channel first. The secondary channel is used when the message cannot be sent over the primary channel during the reporting period of the secondary channel. For example, if the primary channel is a cellular internet connection with report period of one second, and the secondary channel is RockBLOCK transceiver with report period of sixty seconds, Radio Room will try to send reports every second over the cellular link, and will switch to ISBD when sixty seconds elapsed after the last successful report. UV Radio Room always checks both channels for mobile-terminated messages.
 
-Regular radio-telemetry communication between MAVLink-based autopilots and CGSs involves multiple MAVLink messages sent several times per second both ways. This protocol is too chatty for slow and expensive ISBD channel. Radio Room compresses attributes of multiple messages into [HIGH_LATENCY](https://mavlink.io/en/messages/common.html#HIGH_LATENCY) MAVLink message appropriate for high latency connections like Iridium SBD. The HIGH_LATENCY messages periodically are sent to the communication channels.
+Regular radio-telemetry communication between MAVLink-based autopilots and CGSs involves multiple MAVLink messages sent several times per second both ways. This protocol is too chatty for slow and expensive ISBD channel. Radio Room compresses attributes of multiple messages into [HIGH_LATENCY2](https://mavlink.io/en/messages/common.html#HIGH_LATENCY2) MAVLink message appropriate for high latency connections like Iridium SBD. The HIGH_LATENCY messages periodically are sent to the communication channels.
 
 When GCS client sends mission items to UV Hub, first the all the items are buffered in the desired state of the UV Shadow and then UV Hub sends them to UV Radio Room, one mission item per message. Radio Room buffers all the mission items first and then sends them to the autopilot in a quick succession. The mission acknowledgment from the autopilot is sent back to the GCS.
 
