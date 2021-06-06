@@ -18,6 +18,8 @@ UV RadioRoom system requires the following hardware and software:
 * Activated [RockBLOCK Mk2](http://www.rock7mobile.com/products-rockblock) or [RockBLOCK 9603](http://www.rock7mobile.com/products-rockblock-9603) Iridium satellite communication module with FTDI USB to UART cable.
 * Cellular or satellite Internet modem.
 
+See [rpi-radioroom.md](https://github.com/envirover/SPLRadioRoom/blob/master/hardware/rpi-radioroom.md) for UV Radio Room hardware parts and STL files for a 3D-printed enclosure.
+
 ## Wiring
 
 UV Radio Room uses serial devices to communicate with autopilot and ISBD transceiver. Cellular or satellite Internet modems could be connected using USB, Ethernet, or Wi-Fi connections.
@@ -35,11 +37,11 @@ It is recommended to connect RockBLOCK module using [FTDI USB to UART cable](htt
 
 Connect the cellular or satellite Internet modem to Raspberry Pi as recommended by the modem manufacturer. The modems are not shown on the diagram.
 
-UV Radio Room 2.5 supports version 2.0 of MAVLink protocol. 
+UV Radio Room 2.5 supports version 2.0 of MAVLink protocol.
 
 ![Radio Room with Raspberry Pi Zero W, RockBLOCK 9603, and Hologram Nova modem](images/radioroom.jpg)
 
-_Radio Room setup with Raspberry Pi Zero W, RockBLOCK 9603, and Hologram Nova modem_
+_Radio Room setup with Raspberry Pi 3, RockBLOCK 9603, and Sixfab 4G/LTE cellular modem_
 
 ## Installing
 
