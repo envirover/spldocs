@@ -13,4 +13,4 @@ SPL 2.5 highlights:
 - SPL now supports MAVLink 2.0.
 - HIGH_LATENCY2 message is now used to report the vehicle state instead of deprecated HIGH_LATENCY  message.
 - UV Tracks REST API version was changed to v3. The vehicle state report properties returned by GetState and GetTracks requests were changed.
-- Fixed issue with invalid system Id is state reports send by UV RadioRoom.
+- Fixed issue with invalid system Id in state reports send by UV RadioRoom.
