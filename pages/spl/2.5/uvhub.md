@@ -1,9 +1,9 @@
 ---
 title: UV Hub
 keywords: spl, mavlink, rockblock, satellite, telemetry, isbd, ArduPilot, PX4, Rock7Core
-sidebar: home_sidebar_24
+sidebar: home_sidebar
 toc: false
-permalink: 2.4/uvhub.html
+permalink: uvhub.html
 folder: spl
 ---
 

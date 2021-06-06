@@ -1,3 +1,7 @@
 # docs
 
-Envirover  software documentation
+Envirover software documentation
+
+## Test
+
+$ bundle exec jekyll serve

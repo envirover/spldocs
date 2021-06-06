@@ -1,9 +1,9 @@
 ---
 title: UV Hub Deployment with Docker Containers
 keywords: spl, ardupilot, rockblock, satellite, telemetry, iridium, isbd, docker
-sidebar: home_sidebar_24
+sidebar: home_sidebar
 toc: false
-permalink: 2.4/uvhub-docker.html
+permalink: uvhub-docker.html
 folder: spl
 ---
 
@@ -21,7 +21,7 @@ Deploying SPL system with Docker containers requires the following prerequisites
 
 Follow these steps to deploy SPL servers with Docker using [container images from Docker Hub](https://hub.docker.com/u/envirover):
 
-1. Download [docker-compose.yml](https://envirover.s3-us-west-2.amazonaws.com/spl/2.4.0/docker-compose.yml) file to the computer with Docker client installed.
+1. Download [docker-compose.yml](https://envirover.s3-us-west-2.amazonaws.com/spl/2.5.0/docker-compose.yml) file to the computer with Docker client installed.
 2. Modify docker-compose.yml file to change the values of MAV_AUTOPILOT, MAV_TYPE, MAV_SYSID, ROCKBLOCK_IMEI, ROCKBLOCK_USERNAME, ROCKBLOCK_PASSWORD container's environment variable to match your autopilot firmware, RockBLOCK IMEI, Rock 7 user name and password.
 3. Use docker-compose command to create the Docker containers:
 

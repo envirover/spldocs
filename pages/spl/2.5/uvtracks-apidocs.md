@@ -1,9 +1,9 @@
 ---
-title: UV Tracks REST API v2
+title: UV Tracks REST API v3
 keywords: spl, mavlink, rockblock, satellite, telemetry, rest, api, service
-sidebar: home_sidebar_24
+sidebar: home_sidebar
 toc: false
-permalink: 2.4/uvtracks-apidocs.html
+permalink: uvtracks-apidocs.html
 folder: spl
 ---
 
@@ -29,7 +29,7 @@ Returns the last reported state of the vehicle in <a href="https://geojson.org">
 
 #### Syntax
 
-`GET /uvtracks/api/v2/state?sysid={SysId}`
+`GET /uvtracks/api/v3/state?sysid={SysId}`
 
 #### Request Parameters
 
@@ -41,13 +41,13 @@ Returns the last reported state of the vehicle in <a href="https://geojson.org">
 
 #### Response
 
-GetState response body is a GeoJSON feature collection that contains single point feature with properties of [HIGH_LATENCY](uvtracks-apidocs.html#high_latency-message-properties) MAVLink message.
+GetState response body is a GeoJSON feature collection that contains single point feature with the last [state report](uvtracks-apidocs.html#state-report-message-properties).
 
 #### Example
 
 Request
 
-`GET /uvtracks/api/v2/state`
+`GET /uvtracks/api/v3/state`
 
 Response
 
@@ -55,38 +55,41 @@ Response
 {
   "features" : [ {
     "geometry" : {
-      "coordinates" : [ -0.1460533, 0.0731876, 3.0 ],
+      "coordinates" : [ -123.4567, 89.01234, 489.0 ],
       "type" : "Point"
     },
     "properties" : {
+      "altitude" : 489.0,
       "throttle" : 0,
-      "latitude" : 340731876,
+      "target_altitude" : 1.0,
+      "battery_voltage" : 8.0,
+      "target_distance" : 0.0,
+      "autopilot" : 3,
+      "latitude" : 89.01234,
       "wp_num" : 0,
-      "roll" : 2,
-      "groundspeed" : 0,
-      "landed_state" : 0,
-      "gps_nsat" : 6,
+      "roll" : 0.0,
+      "channel" : 1,
+      "failure_flags" : 3325,
+      "groundspeed" : 0.0,
+      "battery" : 98,
       "compid" : 1,
-      "temperature" : 8,
-      "pitch" : -74,
-      "wp_distance" : 0,
-      "gps_fix_type" : 4,
-      "longitude" : -01460533,
-      "failsafe" : 0,
-      "heading" : 8711,
+      "pitch" : -2.0,
+      "mav_type" : 2,
+      "timestamp" : 618415,
+      "longitude" : -123.4567,
+      "target_heading" : 0.0,
+      "heading" : 278.0,
       "sysid" : 1,
-      "airspeed_sp" : 0,
-      "base_mode" : 89,
-      "msgid" : 234,
-      "airspeed" : 0,
-      "temperature_air" : 8,
-      "altitude_sp" : 3,
-      "battery_remaining" : 99,
-      "altitude_amsl" : 3,
-      "custom_mode" : 5,
-      "heading_sp" : 8700,
-      "climb_rate" : 0,
-      "time" : 1582261908360
+      "airspeed_sp" : 0.0,
+      "wind_heading" : 0.0,
+      "msgid" : 235,
+      "airspeed" : 0.0,
+      "temperature_air" : 51.0,
+      "custom_mode" : 81,
+      "windspeed" : 0.0,
+      "climb_rate" : 0.0,
+      "time" : 1620965880129,
+      "battery2_voltage" : 8.0
     },
     "type" : "Feature"
   } ],
@@ -100,7 +103,7 @@ Returns a sequence of reported states of the vehicle or the vehicle's track line
 
 #### Syntax
 
-`GET /uvtracks/api/v2/tracks?sysid={SysId}&geometryType={GeometryType}&startTime={StartTime}&endTime={EndTime}&top={Top}`
+`GET /uvtracks/api/v3/tracks?sysid={SysId}&geometryType={GeometryType}&startTime={StartTime}&endTime={EndTime}&top={Top}`
 
 #### Request Parameters
 
@@ -123,7 +126,7 @@ GeoJSON FeatureCollection with either multiple point features or single line fea
 
 Request
 
-`GET /uvtracks/api/v2/tracks?geometryType=line`
+`GET /uvtracks/api/v3/tracks?geometryType=line`
 
 Response
 
@@ -152,7 +155,7 @@ Returns mission items of the vehicle in <a href="https://geojson.org">GeoJSON</a
 
 #### Syntax
 
-`GET /uvtracks/api/v2/missions?sysid={SysId}&geometryType={GeometryType}`
+`GET /uvtracks/api/v3/missions?sysid={SysId}&geometryType={GeometryType}`
 
 #### Request Parameters
 
@@ -170,7 +173,7 @@ GeoJSON FeatureCollection with either multiple point features or single line fea
 
 Request
 
-`GET /uvtracks/api/v2/missions`
+`GET /uvtracks/api/v3/missions`
 
 Response
 
@@ -239,7 +242,7 @@ Returns the last on-board parameters of the vehicle in JSON format.
 
 #### Syntax
 
-`GET /uvtracks/api/v2/parameters?sysid={SysId}`
+`GET /uvtracks/api/v3/parameters?sysid={SysId}`
 
 #### Request Parameters
 
@@ -257,7 +260,7 @@ GetState response body contains flat key-value map of on-board parameters in JSO
 
 Request
 
-`GET /uvtracks/api/v2/parameters`
+`GET /uvtracks/api/v3/parameters`
 
 Response
 
@@ -275,36 +278,42 @@ Response
 
 ## Data Types
 
-### HIGH_LATENCY Message Properties
+### State Report Message Properties
 
 |Field|Data Type|Description|
 |-----|---------|-----------|
-|base_mode|Integer|Bitmap of enabled system modes (see MAV_MODE_FLAG)|
-|custom_mode|Integer|A bitfield for use for autopilot-specific flags|
-|landed_state|Integer|The landed state (see MAV_LANDED_STATE enum). Is set to MAV_LANDED_STATE_UNDEFINED if landed state is unknown.|
-|roll|Integer|Roll (degrees)|
-|pitch|Integer|Pitch (degrees)|
-|heading|Integer|Heading (degrees)|
+|airspeed_sp|Float|Airspeed setpoint (meters/seconds)|
+|airspeed|Float|Airspeed (meters/seconds)|
+|altitude|Float|Altitude above mean sea level (meters)|
+|autopilot|Integer|Autopilot type/class (MAV_AUTOPILOT)|
+|battery_voltage|Float|Battery 1 voltage (volts)|
+|battery|Integer|Remaining battery (percentage)|
+|battery2_voltage|Float|Battery 2 voltage (volts)|
+|channel|Integer|Comm channel used|
+|climb_rate|Float|Maximum climb rate magnitude since last message (meters/second)|
+|compid|Integer|Component Id|
+|custom_mode|Integer|A bitfield for use for autopilot-specific flags (2 byte version)|
+|failure_flags|Integer|Bitmap of failure flags|
+|groundspeed|Float|Ground speed (meters/seconds)|
+|heading|Float|Heading (degrees)|
+|latitude|Float|Latitude (decimal degrees)|
+|longitude|Float|Longitude (decimal degrees)|
+|mav_type|Integer|Type of the MAV (MAV_TYPE)|
+|msgid|Integer|Message Id|
+|pitch|Float|Pitch (degrees)|
+|roll|Float|Roll (degrees)|
+|sysid|Integer|System Id|
+|target_altitude|Float|Altitude setpoint relative to the home position (meters)|
+|target_distance|Float|Distance to target (meters)|
+|target_heading|Float|Target heading (degrees)|
+|temperature_air|Float|Air temperature from airspeed sensor (degrees)|
 |throttle|Integer|Throttle (percentage)|
-|heading_sp|Integer|Heading setpoint (degrees)|
-|latitude|Integer|Latitude (decimal degrees)|
-|longitude|Integer|Longitude (decimal degrees)|
-|altitude_amsl|Integer|Altitude above mean sea level (meters)|
-|altitude_sp|Integer|Altitude setpoint relative to the home position (meters)|
-|airspeed|Integer|Airspeed (meters/seconds)|
-|airspeed_sp|Integer|Airspeed setpoint (meters/seconds)|
-|groundspeed|Integer|Ground speed (meters/seconds)|
-|climb_rate|Integer|Climb rate (meters/seconds)|
-|gps_nsat|Integer|Number of satellites visible. If unknown, set to 255|
-|gps_fix_type|Integer|GPS Fix type (GPS_FIX_TYPE enum)|
-|battery_remaining|Integer|Remaining battery (percentage)|
-|temperature|Integer|Battery 1 voltage (volts)|
-|temperature_air|Integer|Battery 2 voltage (volts)|
-|failsafe|Integer|Failsafe (each bit represents a failsafe where 0=ok, 1=failsafe active (bit0:RC, bit1:batt, bit2:GPS, bit3:GCS, bit4:fence)|
+|time|Integer|UNIX Epoch time when the message was received|
+|timestamp|Integer|Time since boot (milliseconds)|
+|wind_heading|Float|Wind heading (degrees)|
+|windspeed|Float|Windspeed (meters/second)|
 |wp_num|Integer|Current waypoint number|
-|wp_distance|Integer|Distance to target (meters)|
-|time|Integer|Report time (UNIX epoch time)|
-  
+
 ## Errors
 
 When operations fail, UV Tracks service returns HTTP status code greater or equal to 400 and an errors response in the following format.
@@ -315,4 +324,3 @@ When operations fail, UV Tracks service returns HTTP status code greater or equa
     "message":"Operation failed."
 }
 ```
-
